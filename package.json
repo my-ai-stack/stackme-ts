@@ -1,0 +1,47 @@
+{
+  "name": "@stackme/sdk",
+  "version": "0.1.0",
+  "description": "Stackme - Memory layer for AI applications (TypeScript/JavaScript SDK)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "memory",
+    "ai",
+    "context",
+    "embedding",
+    "knowledge-graph",
+    "vector-search"
+  ],
+  "author": "Stack AI",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "uuid": "^9.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
