@@ -1,0 +1,23 @@
+node_modules/
+dist/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
